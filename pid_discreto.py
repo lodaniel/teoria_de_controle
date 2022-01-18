@@ -30,6 +30,6 @@ for k in range(3,N):
     y[k] = 2*y[k-1]-y[k-2]+.005*u[k-1]+.005*u[k-2]
     e[k] = r[k] - y[k]
     u[k] = u[k-1] + C1*e[k] + C2*e[k-1] + C3*e[k-2]
-plt.stem(t,r,linefmt='blue',markerfmt='D')
-plt.stem(t,y,linefmt='blue',markerfmt='D')
+plt.stem(t,r,linefmt='blue')
+plt.stem(t,y,linefmt='green',markerfmt='D')
 plt.show()
